@@ -1,0 +1,21 @@
+{
+  "name": "@local/scholar-shelf",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local-first scholarly shelf for DeepSeek Harness: persist verified literature (title/DOI/authors/year/venue/tags/status) to a JSONL shelf, search it fully offline, export citation-ready Markdown/TSV tables. Stateful memory layer complementing @local/scholar-kit's stateless verification core.",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
